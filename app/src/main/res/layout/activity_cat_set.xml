@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".CatSetActivity">
+
+    <TextView
+        android:id="@+id/textGrid"
+        android:text="CATEGORY SETS"
+        android:textSize="34sp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="200px" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:horizontalSpacing="16dp"
+        android:id="@+id/catset_gridview"
+        android:verticalSpacing="16dp" />
+
+</LinearLayout>
